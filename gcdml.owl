@@ -5,7 +5,6 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY smil20 "http://www.w3.org/2001/SMIL20/#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema" >
-    <!ENTITY error "http://org.semanticweb.owlapi/error#" >
     <!ENTITY gcdml "http://gensc.org/gcdml/owl/gcdml.owl#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY smil20lang "http://www.w3.org/2001/SMIL20/Language#" >
@@ -770,7 +769,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error74"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;method"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;nucExtractionType"/>
@@ -800,7 +798,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error83"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;nucleicAcidAmplification"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;dnaAmplificationMIGSType"/>
@@ -862,8 +859,6 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&gcdml;rangeORlist"/>
-                    <rdf:Description rdf:about="&error;Error78"/>
-                    <rdf:Description rdf:about="&error;Error79"/>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
@@ -884,9 +879,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error75"/>
-                    <rdf:Description rdf:about="&error;Error76"/>
-                    <rdf:Description rdf:about="&error;Error77"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;ncbiOrganismName"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;GenomeProjectOrganismNameType"/>
@@ -963,12 +955,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error68"/>
-                    <rdf:Description rdf:about="&error;Error69"/>
-                    <rdf:Description rdf:about="&error;Error70"/>
-                    <rdf:Description rdf:about="&error;Error71"/>
-                    <rdf:Description rdf:about="&error;Error72"/>
-                    <rdf:Description rdf:about="&error;Error73"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;assembly"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;assemblyMIGSType"/>
@@ -1098,7 +1084,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error67"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;dnaLibrary"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;GenomeDNALibraryType"/>
@@ -1157,10 +1142,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error59"/>
-                    <rdf:Description rdf:about="&error;Error60"/>
-                    <rdf:Description rdf:about="&error;Error61"/>
-                    <rdf:Description rdf:about="&error;Error62"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;accession"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;AccessionNumberType"/>
@@ -1359,9 +1340,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error56"/>
-                    <rdf:Description rdf:about="&error;Error57"/>
-                    <rdf:Description rdf:about="&error;Error58"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;ncbiOrganismName"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;GenomeProjectOrganismNameType"/>
@@ -1496,7 +1474,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error18"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;dnaLibrary"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;GenomeDNALibraryType"/>
@@ -1543,9 +1520,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error64"/>
-                    <rdf:Description rdf:about="&error;Error65"/>
-                    <rdf:Description rdf:about="&error;Error66"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;assembly"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;assemblyMIGSType"/>
@@ -1571,9 +1545,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error2"/>
-                    <rdf:Description rdf:about="&error;Error3"/>
-                    <rdf:Description rdf:about="&error;Error4"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;sequences"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;SequenceSetType"/>
@@ -1600,9 +1571,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error25"/>
-                    <rdf:Description rdf:about="&error;Error26"/>
-                    <rdf:Description rdf:about="&error;Error27"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;ncbiOrganismName"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;GenomeProjectOrganismNameType"/>
@@ -1741,7 +1709,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error5"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;isolate"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;MiensCultureIsolateType"/>
@@ -1792,7 +1759,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error24"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;sequenceQualityCheck"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;SequenceQualityCheckEnumType"/>
@@ -1835,9 +1801,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error15"/>
-                    <rdf:Description rdf:about="&error;Error16"/>
-                    <rdf:Description rdf:about="&error;Error17"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;ncbiOrganismName"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;GenomeProjectOrganismNameType"/>
@@ -1984,7 +1947,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error80"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;dnaLibrary"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;MiensSurveyLibraryMIGSType"/>
@@ -2039,7 +2001,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error1"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;assembly"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;assemblyMIGSType"/>
@@ -2117,13 +2078,6 @@
 
     <owl:Class rdf:about="&gcdml;MiensnucExtractType">
         <rdfs:subClassOf rdf:resource="&gcdml;MiensnucExtractMIGSType"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error10"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2131,14 +2085,6 @@
     <!-- http://gensc.org/gcdml/owl/gcdml.owl#NasReportsType -->
 
     <owl:Class rdf:about="&gcdml;NasReportsType">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error28"/>
-                    <rdf:Description rdf:about="&error;Error29"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2216,7 +2162,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error36"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;dnaLibrary"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;GenomeDNALibraryType"/>
@@ -2275,9 +2220,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error12"/>
-                    <rdf:Description rdf:about="&error;Error13"/>
-                    <rdf:Description rdf:about="&error;Error14"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;assembly"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;assemblyMIGSType"/>
@@ -2407,7 +2349,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error34"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;dnaLibrary"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;GenomeDNALibraryType"/>
@@ -2569,7 +2510,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error11"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;dnaLibrary"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;GenomeDNALibraryType"/>
@@ -2635,7 +2575,6 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&gcdml;rangeORlist"/>
-                    <rdf:Description rdf:about="&error;Error63"/>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
@@ -2651,8 +2590,6 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&gcdml;rangeORlist"/>
-                    <rdf:Description rdf:about="&error;Error81"/>
-                    <rdf:Description rdf:about="&error;Error82"/>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
@@ -2672,10 +2609,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error30"/>
-                    <rdf:Description rdf:about="&error;Error31"/>
-                    <rdf:Description rdf:about="&error;Error32"/>
-                    <rdf:Description rdf:about="&error;Error33"/>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
@@ -2686,17 +2619,6 @@
     <!-- http://gensc.org/gcdml/owl/gcdml.owl#StudyDataMIGSType -->
 
     <owl:Class rdf:about="&gcdml;StudyDataMIGSType">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error92"/>
-                    <rdf:Description rdf:about="&error;Error93"/>
-                    <rdf:Description rdf:about="&error;Error94"/>
-                    <rdf:Description rdf:about="&error;Error95"/>
-                    <rdf:Description rdf:about="&error;Error96"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2708,14 +2630,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error84"/>
-                    <rdf:Description rdf:about="&error;Error85"/>
-                    <rdf:Description rdf:about="&error;Error86"/>
-                    <rdf:Description rdf:about="&error;Error87"/>
-                    <rdf:Description rdf:about="&error;Error88"/>
-                    <rdf:Description rdf:about="&error;Error89"/>
-                    <rdf:Description rdf:about="&error;Error90"/>
-                    <rdf:Description rdf:about="&error;Error91"/>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
@@ -2833,7 +2747,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error41"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;dnaLibrary"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;GenomeDNALibraryType"/>
@@ -2899,10 +2812,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error6"/>
-                    <rdf:Description rdf:about="&error;Error7"/>
-                    <rdf:Description rdf:about="&error;Error8"/>
-                    <rdf:Description rdf:about="&error;Error9"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;calculationMethod"/>
                         <owl:allValuesFrom rdf:resource="&xsd;#string"/>
@@ -2937,8 +2846,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error39"/>
-                    <rdf:Description rdf:about="&error;Error40"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;plasmid"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;FullSequenceType"/>
@@ -2957,14 +2864,6 @@
                         <owl:onProperty rdf:resource="&gcdml;segment"/>
                         <owl:minCardinality rdf:datatype="&xsd;#nonNegativeInteger">1</owl:minCardinality>
                     </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error37"/>
-                    <rdf:Description rdf:about="&error;Error38"/>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
@@ -3019,7 +2918,6 @@
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error35"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&gcdml;method"/>
                         <owl:allValuesFrom rdf:resource="&gcdml;dnaAmplificationEnumType"/>
@@ -3046,48 +2944,10 @@
     <owl:Class rdf:about="&gcdml;draftType">
         <rdfs:subClassOf rdf:resource="&gcdml;sequencingMethodsRequired"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error46"/>
-                    <rdf:Description rdf:about="&error;Error47"/>
-                    <rdf:Description rdf:about="&error;Error48"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error42"/>
-                    <rdf:Description rdf:about="&error;Error43"/>
-                    <rdf:Description rdf:about="&error;Error44"/>
-                    <rdf:Description rdf:about="&error;Error45"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&gcdml;finishingStrategy"/>
                 <owl:allValuesFrom rdf:resource="&gcdml;finishingStrategyType"/>
             </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error53"/>
-                    <rdf:Description rdf:about="&error;Error54"/>
-                    <rdf:Description rdf:about="&error;Error55"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error49"/>
-                    <rdf:Description rdf:about="&error;Error50"/>
-                    <rdf:Description rdf:about="&error;Error51"/>
-                    <rdf:Description rdf:about="&error;Error52"/>
-                </owl:intersectionOf>
-            </owl:Class>
         </rdfs:subClassOf>
     </owl:Class>
     
@@ -3161,13 +3021,6 @@
 
     <owl:Class rdf:about="&gcdml;nucExtractType">
         <rdfs:subClassOf rdf:resource="&gcdml;nucExtractMIGSType"/>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error23"/>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -3316,16 +3169,6 @@
     <!-- http://gensc.org/gcdml/owl/gcdml.owl#rangeORlist -->
 
     <owl:Class rdf:about="&gcdml;rangeORlist">
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&error;Error19"/>
-                    <rdf:Description rdf:about="&error;Error20"/>
-                    <rdf:Description rdf:about="&error;Error21"/>
-                    <rdf:Description rdf:about="&error;Error22"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -4009,581 +3852,6 @@
 
     <owl:Class rdf:about="&gcdml;sourceNameType"/>
     
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error1 -->
-
-    <owl:Class rdf:about="&error;Error1"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error10 -->
-
-    <owl:Class rdf:about="&error;Error10"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error11 -->
-
-    <owl:Class rdf:about="&error;Error11"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error12 -->
-
-    <owl:Class rdf:about="&error;Error12"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error13 -->
-
-    <owl:Class rdf:about="&error;Error13"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error14 -->
-
-    <owl:Class rdf:about="&error;Error14"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error15 -->
-
-    <owl:Class rdf:about="&error;Error15"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error16 -->
-
-    <owl:Class rdf:about="&error;Error16"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error17 -->
-
-    <owl:Class rdf:about="&error;Error17"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error18 -->
-
-    <owl:Class rdf:about="&error;Error18"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error19 -->
-
-    <owl:Class rdf:about="&error;Error19"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error2 -->
-
-    <owl:Class rdf:about="&error;Error2"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error20 -->
-
-    <owl:Class rdf:about="&error;Error20"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error21 -->
-
-    <owl:Class rdf:about="&error;Error21"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error22 -->
-
-    <owl:Class rdf:about="&error;Error22"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error23 -->
-
-    <owl:Class rdf:about="&error;Error23"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error24 -->
-
-    <owl:Class rdf:about="&error;Error24"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error25 -->
-
-    <owl:Class rdf:about="&error;Error25"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error26 -->
-
-    <owl:Class rdf:about="&error;Error26"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error27 -->
-
-    <owl:Class rdf:about="&error;Error27"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error28 -->
-
-    <owl:Class rdf:about="&error;Error28"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error29 -->
-
-    <owl:Class rdf:about="&error;Error29"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error3 -->
-
-    <owl:Class rdf:about="&error;Error3"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error30 -->
-
-    <owl:Class rdf:about="&error;Error30"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error31 -->
-
-    <owl:Class rdf:about="&error;Error31"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error32 -->
-
-    <owl:Class rdf:about="&error;Error32"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error33 -->
-
-    <owl:Class rdf:about="&error;Error33"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error34 -->
-
-    <owl:Class rdf:about="&error;Error34"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error35 -->
-
-    <owl:Class rdf:about="&error;Error35"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error36 -->
-
-    <owl:Class rdf:about="&error;Error36"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error37 -->
-
-    <owl:Class rdf:about="&error;Error37"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error38 -->
-
-    <owl:Class rdf:about="&error;Error38"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error39 -->
-
-    <owl:Class rdf:about="&error;Error39"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error4 -->
-
-    <owl:Class rdf:about="&error;Error4"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error40 -->
-
-    <owl:Class rdf:about="&error;Error40"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error41 -->
-
-    <owl:Class rdf:about="&error;Error41"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error42 -->
-
-    <owl:Class rdf:about="&error;Error42"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error43 -->
-
-    <owl:Class rdf:about="&error;Error43"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error44 -->
-
-    <owl:Class rdf:about="&error;Error44"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error45 -->
-
-    <owl:Class rdf:about="&error;Error45"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error46 -->
-
-    <owl:Class rdf:about="&error;Error46"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error47 -->
-
-    <owl:Class rdf:about="&error;Error47"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error48 -->
-
-    <owl:Class rdf:about="&error;Error48"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error49 -->
-
-    <owl:Class rdf:about="&error;Error49"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error5 -->
-
-    <owl:Class rdf:about="&error;Error5"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error50 -->
-
-    <owl:Class rdf:about="&error;Error50"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error51 -->
-
-    <owl:Class rdf:about="&error;Error51"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error52 -->
-
-    <owl:Class rdf:about="&error;Error52"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error53 -->
-
-    <owl:Class rdf:about="&error;Error53"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error54 -->
-
-    <owl:Class rdf:about="&error;Error54"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error55 -->
-
-    <owl:Class rdf:about="&error;Error55"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error56 -->
-
-    <owl:Class rdf:about="&error;Error56"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error57 -->
-
-    <owl:Class rdf:about="&error;Error57"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error58 -->
-
-    <owl:Class rdf:about="&error;Error58"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error59 -->
-
-    <owl:Class rdf:about="&error;Error59"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error6 -->
-
-    <owl:Class rdf:about="&error;Error6"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error60 -->
-
-    <owl:Class rdf:about="&error;Error60"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error61 -->
-
-    <owl:Class rdf:about="&error;Error61"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error62 -->
-
-    <owl:Class rdf:about="&error;Error62"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error63 -->
-
-    <owl:Class rdf:about="&error;Error63"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error64 -->
-
-    <owl:Class rdf:about="&error;Error64"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error65 -->
-
-    <owl:Class rdf:about="&error;Error65"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error66 -->
-
-    <owl:Class rdf:about="&error;Error66"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error67 -->
-
-    <owl:Class rdf:about="&error;Error67"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error68 -->
-
-    <owl:Class rdf:about="&error;Error68"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error69 -->
-
-    <owl:Class rdf:about="&error;Error69"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error7 -->
-
-    <owl:Class rdf:about="&error;Error7"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error70 -->
-
-    <owl:Class rdf:about="&error;Error70"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error71 -->
-
-    <owl:Class rdf:about="&error;Error71"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error72 -->
-
-    <owl:Class rdf:about="&error;Error72"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error73 -->
-
-    <owl:Class rdf:about="&error;Error73"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error74 -->
-
-    <owl:Class rdf:about="&error;Error74"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error75 -->
-
-    <owl:Class rdf:about="&error;Error75"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error76 -->
-
-    <owl:Class rdf:about="&error;Error76"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error77 -->
-
-    <owl:Class rdf:about="&error;Error77"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error78 -->
-
-    <owl:Class rdf:about="&error;Error78"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error79 -->
-
-    <owl:Class rdf:about="&error;Error79"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error8 -->
-
-    <owl:Class rdf:about="&error;Error8"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error80 -->
-
-    <owl:Class rdf:about="&error;Error80"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error81 -->
-
-    <owl:Class rdf:about="&error;Error81"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error82 -->
-
-    <owl:Class rdf:about="&error;Error82"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error83 -->
-
-    <owl:Class rdf:about="&error;Error83"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error84 -->
-
-    <owl:Class rdf:about="&error;Error84"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error85 -->
-
-    <owl:Class rdf:about="&error;Error85"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error86 -->
-
-    <owl:Class rdf:about="&error;Error86"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error87 -->
-
-    <owl:Class rdf:about="&error;Error87"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error88 -->
-
-    <owl:Class rdf:about="&error;Error88"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error89 -->
-
-    <owl:Class rdf:about="&error;Error89"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error9 -->
-
-    <owl:Class rdf:about="&error;Error9"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error90 -->
-
-    <owl:Class rdf:about="&error;Error90"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error91 -->
-
-    <owl:Class rdf:about="&error;Error91"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error92 -->
-
-    <owl:Class rdf:about="&error;Error92"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error93 -->
-
-    <owl:Class rdf:about="&error;Error93"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error94 -->
-
-    <owl:Class rdf:about="&error;Error94"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error95 -->
-
-    <owl:Class rdf:about="&error;Error95"/>
-    
-
-
-    <!-- http://org.semanticweb.owlapi/error#Error96 -->
-
-    <owl:Class rdf:about="&error;Error96"/>
 </rdf:RDF>
 
 

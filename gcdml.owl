@@ -2,7 +2,7 @@
 <!DOCTYPE rdf:RDF [
 	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
 	<!ENTITY xml 'http://www.w3.org/XML/1998/namespace#'>
-	<!ENTITY gcdml '#'>
+	<!ENTITY gcdml 'http://gensc.org/gcdml/owl/gcdml.owl#'>
 	<!ENTITY smil20lang 'http://www.w3.org/2001/SMIL20/Language#'>
 	<!ENTITY smil20 'http://www.w3.org/2001/SMIL20/#'>
 ]>

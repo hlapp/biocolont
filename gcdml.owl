@@ -1119,6 +1119,7 @@
 
     <owl:Class rdf:about="http://gensc.org/gcdml/owl/gcdml.owl#EukaryoteReportType">
         <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#EuBaPlViOrAbstractReportGCDType"/>
+        <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#GCDReportComponent"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1245,72 +1246,32 @@
     
 
 
+    <!-- http://gensc.org/gcdml/owl/gcdml.owl#GCDReportComponent -->
+
+    <owl:Class rdf:about="http://gensc.org/gcdml/owl/gcdml.owl#GCDReportComponent">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
     <!-- http://gensc.org/gcdml/owl/gcdml.owl#GCDReportsType -->
 
     <owl:Class rdf:about="http://gensc.org/gcdml/owl/gcdml.owl#GCDReportsType">
-        <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#NasReportsType"/>
-        <rdfs:subClassOf>
+        <owl:equivalentClass>
             <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
+                <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#eukaryote"/>
-                        <owl:allValuesFrom rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#EukaryoteReportType"/>
+                        <owl:onProperty rdf:resource="&dcterms;hasPart"/>
+                        <owl:someValuesFrom rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#GCDReportComponent"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#metagenome"/>
-                        <owl:allValuesFrom rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#MetagenomeReportType"/>
+                        <owl:onProperty rdf:resource="&dcterms;hasPart"/>
+                        <owl:someValuesFrom rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#StudyDataType"/>
                     </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#miens_survey"/>
-                        <owl:allValuesFrom rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#MiensSurveyReportType"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#organelle"/>
-                        <owl:allValuesFrom rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#OrganelleReportType"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#plasmid"/>
-                        <owl:allValuesFrom rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#PlasmidReportType"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#prokaryote"/>
-                        <owl:allValuesFrom rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#ProkaryoteReportType"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#virus"/>
-                        <owl:allValuesFrom rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#VirusReportType"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#eukaryote"/>
-                        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#metagenome"/>
-                        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#miens_survey"/>
-                        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#organelle"/>
-                        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#plasmid"/>
-                        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#prokaryote"/>
-                        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#virus"/>
-                        <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minCardinality>
-                    </owl:Restriction>
-                </owl:unionOf>
+                </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#NasReportsType"/>
         <dc:description>A possible element nested in root - a list of GCD compliant
         reports (e.g. eukaryotic, organelle, etc.). At least one report has to be present.
       </dc:description>
@@ -1520,6 +1481,7 @@
     <!-- http://gensc.org/gcdml/owl/gcdml.owl#MetagenomeReportType -->
 
     <owl:Class rdf:about="http://gensc.org/gcdml/owl/gcdml.owl#MetagenomeReportType">
+        <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#GCDReportComponent"/>
         <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#MetagenomeAbstractReportGCDType"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -1768,6 +1730,7 @@
     <!-- http://gensc.org/gcdml/owl/gcdml.owl#MiensCultureReportType -->
 
     <owl:Class rdf:about="http://gensc.org/gcdml/owl/gcdml.owl#MiensCultureReportType">
+        <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#GCDReportComponent"/>
         <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#MiensCultureAbstractReportGCDType"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -2025,6 +1988,7 @@
     <!-- http://gensc.org/gcdml/owl/gcdml.owl#MiensSurveyReportType -->
 
     <owl:Class rdf:about="http://gensc.org/gcdml/owl/gcdml.owl#MiensSurveyReportType">
+        <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#GCDReportComponent"/>
         <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#MiensSurveyAbstractReportGCDType"/>
         <rdfs:subClassOf>
             <owl:Class>
@@ -2259,6 +2223,7 @@
 
     <owl:Class rdf:about="http://gensc.org/gcdml/owl/gcdml.owl#OrganelleReportType">
         <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#EuBaPlViOrAbstractReportGCDType"/>
+        <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#GCDReportComponent"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2465,6 +2430,7 @@
 
     <owl:Class rdf:about="http://gensc.org/gcdml/owl/gcdml.owl#PlasmidReportType">
         <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#EuBaPlViOrAbstractReportGCDType"/>
+        <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#GCDReportComponent"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2627,6 +2593,7 @@
 
     <owl:Class rdf:about="http://gensc.org/gcdml/owl/gcdml.owl#ProkaryoteReportType">
         <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#EuBaPlViOrAbstractReportGCDType"/>
+        <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#GCDReportComponent"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2954,6 +2921,7 @@
 
     <owl:Class rdf:about="http://gensc.org/gcdml/owl/gcdml.owl#VirusReportType">
         <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#EuBaPlViOrAbstractReportGCDType"/>
+        <rdfs:subClassOf rdf:resource="http://gensc.org/gcdml/owl/gcdml.owl#GCDReportComponent"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
